@@ -14,17 +14,24 @@ body{
   min-height: 100vh;
   background: #333;
 }
-
+.mainContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .card{
   position: relative;
   width: 320px;
   height: 173px;
   background: #fff;
   transition: 0.5s;
+  margin: 5px 5px;
 }
 
 .card:hover{
   height: 350px;
+  z-index: 100;
 }
 
 .card .lines{
@@ -177,4 +184,16 @@ body{
   color: #fff;
   margin-right: 10px;
   text-align: left;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid #000;
+  z-index: 1000;
 }
